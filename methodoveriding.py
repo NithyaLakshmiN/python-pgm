@@ -1,15 +1,34 @@
-class Student:
+# Defining parent class
+class Parent():
 
-    def __init__(self, s1, s2, s3):
-        self.s1 = s1
-        self.s2 = s2
-        self.s3 = s3
+    # Constructor
+    def __init__(self):
+        self.value = "Inside Parent"
 
-    def sum(self, s1, s2, s3):
-        s = s1 + s2 + s3
-        return s
+    # Parent's show method
+    def show(self):
+        print(self.value)
 
 
-obj = Student(10, 20, 20)
-obj.sum(10,20,30)
-print(obj.sum(10,20,30))
+# Defining child class
+class Child(Parent):
+
+    # Constructor
+    def __init__(self):
+        self.value = "Inside Child"
+
+    # Child's show method
+    def show(self):
+        print(self.value)
+
+
+# Driver's code
+obj1 = Parent()
+obj2 = Child()
+
+obj1.show()
+obj2.show()
+
+#Method overriding is an ability of any object-oriented programming language that allows a subclass or child class
+# to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes.
+# When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
