@@ -3,11 +3,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Chrome()
-driver.get("https://www.linkedin.com/")
+driver.get("https://dev-reader.tcdcloud.com/jupiter/index.html")
 print(driver.title)
-driver.find_element(By.XPATH, "//input[@id='session_key']").send_keys("nithyalakshmi.n@gmail.com")
-driver.find_element(By.XPATH, "//input[@id='session_password']").send_keys("afjadhfjdfh")
-driver.find_element(By.XPATH, "//button[@type='submit']").click()
+# driver.find_element(By.XPATH, "//input[@id='session_key']").send_keys("nithyalakshmi.n@gmail.com")
+# driver.find_element(By.XPATH, "//input[@id='session_password']").send_keys("afjadhfjdfh")
+# driver.find_element(By.XPATH, "//button[@type='submit']").click()
 
 # driver.find_element(By.CLASS_NAME,"//*[contains(text(),'Password must be 8 characters or more.')]");
 # print("Password must be 8 characters or more alret message is displayed")
